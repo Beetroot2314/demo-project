@@ -44,19 +44,16 @@ public class UserController {
 					|| (message.getUser().getUserName() == "") || (message.getUser() == null)) {
 				throw new MissingDataException("Invalid message. Missing fields in the message received.");
 			}
-		
 
-		log.info("Sending Paylod to Topic");
-		kafkaTemplate.send(TOPIC, message);
-		
-		return ResponseEntity.status(HttpStatus.ACCEPTED).build();
-		}
-		catch (MissingDataException exc) {
+			log.info("Sending Paylod to Topic");
+			kafkaTemplate.send(TOPIC, message);
+
+			return ResponseEntity.status(HttpStatus.ACCEPTED).build();
+		} catch (MissingDataException exc) {
 			System.out.println(exc);
 			return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
 		}
-		
-		
+
 	}
 
 	@GetMapping("/findAll")
@@ -74,6 +71,7 @@ public class UserController {
 	@DeleteMapping("/deleteUser/{id}")
 	public ResponseEntity deleteUser(@PathVariable int id) {
 
+		
 		log.info("Sending ID to Topic");
 		Message message = new Message();
 		User userid = new User();
@@ -88,9 +86,19 @@ public class UserController {
 	@PutMapping("/updateUser/{id}")
 	public ResponseEntity updateUser(@PathVariable int id, @RequestBody Message message) {
 
+		try {
+			if ((message.getAction() == "") || (message.getUser().getEmail() == "") || (message.getUser().getId() == 0)
+					|| (message.getUser().getUserName() == "") || (message.getUser() == null)) {
+				throw new MissingDataException("Invalid message. Missing fields in the message received.");
+			}
 		log.info("Sending Paylod to Topic");
 		kafkaTemplate.send(TOPIC, message);
 		return ResponseEntity.status(HttpStatus.ACCEPTED).build();
+			}catch(MissingDataException exc){
+				System.out.println(exc);
+				return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
+}
+}
 	}
 
 	// kafka-commands
@@ -102,4 +110,4 @@ public class UserController {
 	// --topic Kafka_Task6 --from-beginning
 	// {"id":13,"userName":"Amber","email":"Nillohit123@gmail.com"}
 
-}
+
