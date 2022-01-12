@@ -21,6 +21,7 @@ import com.task.three.springboottask.model.KafkaConsumer;
 import com.task.three.springboottask.model.Message;
 import com.task.three.springboottask.model.User;
 import com.task.three.springboottask.repository.UserRepo;
+import com.task.three.springboottask.service.UserService;
 
 import ch.qos.logback.classic.Logger;
 
@@ -29,6 +30,9 @@ public class UserController {
 
 	@Autowired
 	private UserRepo repository;
+
+	@Autowired
+	UserService service;
 
 	@Autowired
 	KafkaTemplate<String, Message> kafkaTemplate;
@@ -40,38 +44,39 @@ public class UserController {
 	@PostMapping("/addUser")
 	public ResponseEntity<Message> saveUser(@RequestBody Message message) {
 		try {
-			if ((message.getAction() == "") || (message.getUser().getEmail() == "") || (message.getUser().getId() == 0)
-					|| (message.getUser().getUserName() == "") || (message.getUser() == null)) {
+			if (IsMessageInvalid(message)) {
 				throw new MissingDataException("Invalid message. Missing fields in the message received.");
 			}
 
 			log.info("Sending Paylod to Topic");
 			kafkaTemplate.send(TOPIC, message);
-
 			return ResponseEntity.status(HttpStatus.ACCEPTED).build();
+
 		} catch (MissingDataException exc) {
 			System.out.println(exc);
 			return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
+
 		}
 
 	}
 
 	@GetMapping("/findAll")
-	public List<User> getUsers() {
+	public ResponseEntity<List<User>> getUsers() {
 		log.info("Fetching all users");
-		return repository.findAll();
+		service.GetAll();
+		return new ResponseEntity<List<User>>(service.GetAll(), HttpStatus.ACCEPTED);
 	}
 
 	@GetMapping("/findUser/{id}")
-	public Optional<User> getUser(@PathVariable int id) {
+	public ResponseEntity<Optional<User>> getUser(@PathVariable int id) {
 		log.info("Fetching User with ID " + id);
-		return repository.findById(id);
+		service.GetUser(id);
+		return new ResponseEntity<Optional<User>>(service.GetUser(id), HttpStatus.ACCEPTED);
 	}
 
 	@DeleteMapping("/deleteUser/{id}")
 	public ResponseEntity deleteUser(@PathVariable int id) {
 
-		
 		log.info("Sending ID to Topic");
 		Message message = new Message();
 		User userid = new User();
@@ -91,23 +96,30 @@ public class UserController {
 					|| (message.getUser().getUserName() == "") || (message.getUser() == null)) {
 				throw new MissingDataException("Invalid message. Missing fields in the message received.");
 			}
-		log.info("Sending Paylod to Topic");
-		kafkaTemplate.send(TOPIC, message);
-		return ResponseEntity.status(HttpStatus.ACCEPTED).build();
-			}catch(MissingDataException exc){
-				System.out.println(exc);
-				return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
-}
-}
+			log.info("Sending Paylod to Topic");
+			kafkaTemplate.send(TOPIC, message);
+			return ResponseEntity.status(HttpStatus.ACCEPTED).build();
+		} catch (MissingDataException exc) {
+			System.out.println(exc);
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
+		}
 	}
 
-	// kafka-commands
-	// .\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic
-	// Kafka_Task6
-	// .\bin\windows\kafka-topics.bat --create --zookeeper localhost:2181
-	// --replication-factor 1 --partitions 1 --topic Kafka_Task6
-	// .\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092
-	// --topic Kafka_Task6 --from-beginning
-	// {"id":13,"userName":"Amber","email":"Nillohit123@gmail.com"}
+	public boolean IsMessageInvalid(Message message) {
+		if ((message.getAction() == "") || (message.getUser().getEmail() == "") || (message.getUser().getId() == 0)
+				|| (message.getUser().getUserName() == "") || (message.getUser() == null))
+			return true;
+		return false;
 
+	}
 
+}
+
+// kafka-commands
+// .\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic
+// Kafka_Task6
+// .\bin\windows\kafka-topics.bat --create --zookeeper localhost:2181
+// --replication-factor 1 --partitions 1 --topic Kafka_Task6
+// .\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092
+// --topic Kafka_Task6 --from-beginning
+// {"id":13,"userName":"Amber","email":"Nillohit123@gmail.com"}
