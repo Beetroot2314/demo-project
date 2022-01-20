@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.task.springboottask.converter.Convert;
+import com.task.springboottask.dto.UserDto;
 import com.task.springboottask.excep.MissingDataException;
 import com.task.three.springboottask.model.KafkaConsumer;
 import com.task.three.springboottask.model.Message;
@@ -61,17 +63,16 @@ public class UserController {
 	}
 
 	@GetMapping("/findAll")
-	public ResponseEntity<List<User>> getUsers() {
+	public ResponseEntity<List<UserDto>> getUsers() {
 		log.info("Fetching all users");
-		service.GetAll();
-		return new ResponseEntity<List<User>>(service.GetAll(), HttpStatus.ACCEPTED);
+		//service.GetAll();
+		return new ResponseEntity<List<UserDto>>(Convert.ToDto(service.GetAll()), HttpStatus.ACCEPTED);
 	}
 
 	@GetMapping("/findUser/{id}")
-	public ResponseEntity<Optional<User>> getUser(@PathVariable int id) {
+	public ResponseEntity<UserDto> getUser(@PathVariable int id) {
 		log.info("Fetching User with ID " + id);
-		service.GetUser(id);
-		return new ResponseEntity<Optional<User>>(service.GetUser(id), HttpStatus.ACCEPTED);
+		return new ResponseEntity<UserDto>(service.GetUser(id), HttpStatus.ACCEPTED);
 	}
 
 	@DeleteMapping("/deleteUser/{id}")
@@ -79,9 +80,9 @@ public class UserController {
 
 		log.info("Sending ID to Topic");
 		Message message = new Message();
-		User userid = new User();
-		userid.setId(id);
-		message.user = userid;
+		UserDto userId = new UserDto();
+		userId.setId(id);
+		message.userDto = userId;
 		message.setAction("DELETE");
 		kafkaTemplate.send(TOPIC, message);
 		return ResponseEntity.status(HttpStatus.ACCEPTED).build();
@@ -92,8 +93,7 @@ public class UserController {
 	public ResponseEntity updateUser(@PathVariable int id, @RequestBody Message message) {
 
 		try {
-			if ((message.getAction() == "") || (message.getUser().getEmail() == "") || (message.getUser().getId() == 0)
-					|| (message.getUser().getUserName() == "") || (message.getUser() == null)) {
+			if (IsMessageInvalid(message)) {
 				throw new MissingDataException("Invalid message. Missing fields in the message received.");
 			}
 			log.info("Sending Paylod to Topic");
@@ -106,8 +106,9 @@ public class UserController {
 	}
 
 	public boolean IsMessageInvalid(Message message) {
-		if ((message.getAction() == "") || (message.getUser().getEmail() == "") || (message.getUser().getId() == 0)
-				|| (message.getUser().getUserName() == "") || (message.getUser() == null))
+		if ((message.getAction() == "") || (message.getUserDto().getEmail() == "")
+				|| (message.getUserDto().getId() == 0) || (message.getUserDto().getUserName() == "")
+				|| (message.getUserDto() == null))
 			return true;
 		return false;
 

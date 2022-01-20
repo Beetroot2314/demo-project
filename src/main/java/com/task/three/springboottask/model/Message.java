@@ -1,5 +1,7 @@
 package com.task.three.springboottask.model;
 
+import com.task.springboottask.dto.UserDto;
+
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -10,12 +12,12 @@ import lombok.ToString;
 public class Message {
 	
 	public String action;
-	public User user;
+	public UserDto userDto;
 	
-	public Message(String action, User user) {
+	public Message(String action, UserDto user) {
 		super();
 		this.action = action;
-		this.user = user;
+		this.userDto = user;
 	}
 
 	public Message() {

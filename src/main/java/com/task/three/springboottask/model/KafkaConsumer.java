@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.task.springboottask.converter.Convert;
 import com.task.three.springboottask.controller.UserController;
 import com.task.three.springboottask.repository.UserRepo;
 import com.task.three.springboottask.service.UserService;
@@ -29,17 +30,17 @@ public class KafkaConsumer {
 
 		if (message.getAction().equals("CREATE")) {
 			log.info("Payload received");
-			Create(message.user);
+			Create(Convert.ToUser(message.userDto));
 
 		}
 		if (message.getAction().equals("DELETE")) {
 			log.info("ID/Payload received");
-			Delete(message.user);
+			Delete(Convert.ToUser(message.userDto));
 
 		}
 		if (message.getAction().equals("UPDATE")) {
 			log.info("Payload received");
-			Update(message.user);
+			Update(Convert.ToUser(message.userDto));
 
 		}
 	}

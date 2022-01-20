@@ -3,6 +3,7 @@ package com.task.three.springboottask.service;
 import java.util.List;
 import java.util.Optional;
 
+import com.task.springboottask.dto.UserDto;
 import com.task.three.springboottask.model.Message;
 import com.task.three.springboottask.model.User;
 
@@ -18,5 +19,5 @@ public interface UserService {
 
 	List<User> GetAll();
 
-	Optional<User> GetUser(int id);
+	UserDto GetUser(int id);
 }

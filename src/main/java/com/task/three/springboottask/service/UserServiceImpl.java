@@ -7,7 +7,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-
+import com.task.springboottask.converter.Convert;
+import com.task.springboottask.dto.UserDto;
 import com.task.three.springboottask.model.KafkaConsumer;
 import com.task.three.springboottask.model.User;
 import com.task.three.springboottask.repository.UserRepo;
@@ -65,9 +66,9 @@ public class UserServiceImpl implements UserService{
 	}
 
 	@Override
-	public Optional<User> GetUser(int id)
+	public UserDto GetUser(int id)
 	{
-		return repository.findById(id);
+		return Convert.ToDto(repository.findById(id).orElse(null));
 		
 	}
 	
