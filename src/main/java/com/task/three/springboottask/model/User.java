@@ -6,13 +6,18 @@ import javax.persistence.Id;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-@Getter
-@Setter
-@ToString
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Document(collection = "User")
 public class User {
 
@@ -27,15 +32,5 @@ public class User {
 	private String email;
 	
 
-	public User(int id, String userName, String email) {
-		this.id = id;
-		this.userName = userName;
-		this.email = email;
-		
-	}
-
-	public User() {
-		super();
-	}
 
 }

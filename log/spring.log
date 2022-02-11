@@ -1,18 +1,34 @@
-20-01-2022 21:44:37 - Starting SpringbootTaskApplication using Java 17.0.1 on DESKTOP-110P2IU with PID 13356 (C:\Users\akuma\OneDrive\Desktop\springboot-task\target\classes started by akuma in C:\Users\akuma\OneDrive\Desktop\springboot-task)
-20-01-2022 21:44:37 - No active profile set, falling back to default profiles: default
-20-01-2022 21:44:37 - Multiple Spring Data modules found, entering strict repository configuration mode!
-20-01-2022 21:44:37 - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-20-01-2022 21:44:38 - Finished Spring Data repository scanning in 113 ms. Found 1 MongoDB repository interfaces.
-20-01-2022 21:44:39 - Tomcat initialized with port(s): 8090 (http)
-20-01-2022 21:44:39 - Starting service [Tomcat]
-20-01-2022 21:44:39 - Starting Servlet engine: [Apache Tomcat/9.0.56]
-20-01-2022 21:44:39 - Initializing Spring embedded WebApplicationContext
-20-01-2022 21:44:39 - Root WebApplicationContext: initialization completed in 2273 ms
-20-01-2022 21:44:39 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
-20-01-2022 21:44:40 - Opened connection [connectionId{localValue:1, serverValue:1}] to localhost:27017
-20-01-2022 21:44:40 - Opened connection [connectionId{localValue:2, serverValue:2}] to localhost:27017
-20-01-2022 21:44:40 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=189983000}
-20-01-2022 21:44:41 - ConsumerConfig values: 
+11-02-2022 15:56:31 - Starting SpringbootTaskApplication using Java 17.0.1 on DESKTOP-110P2IU with PID 11712 (C:\Users\akuma\OneDrive\Desktop\springboot-task\target\classes started by akuma in C:\Users\akuma\OneDrive\Desktop\springboot-task)
+11-02-2022 15:56:31 - No active profile set, falling back to default profiles: default
+11-02-2022 15:56:32 - Multiple Spring Data modules found, entering strict repository configuration mode!
+11-02-2022 15:56:32 - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+11-02-2022 15:56:32 - Finished Spring Data repository scanning in 84 ms. Found 1 MongoDB repository interfaces.
+11-02-2022 15:56:33 - Tomcat initialized with port(s): 8090 (http)
+11-02-2022 15:56:33 - Starting service [Tomcat]
+11-02-2022 15:56:33 - Starting Servlet engine: [Apache Tomcat/9.0.56]
+11-02-2022 15:56:33 - Initializing Spring embedded WebApplicationContext
+11-02-2022 15:56:33 - Root WebApplicationContext: initialization completed in 2037 ms
+11-02-2022 15:56:34 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+11-02-2022 15:56:34 - Opened connection [connectionId{localValue:2, serverValue:1}] to localhost:27017
+11-02-2022 15:56:34 - Opened connection [connectionId{localValue:1, serverValue:2}] to localhost:27017
+11-02-2022 15:56:34 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=91298000}
+11-02-2022 15:56:35 - Tomcat started on port(s): 8090 (http) with context path ''
+11-02-2022 15:56:35 - Started SpringbootTaskApplication in 4.203 seconds (JVM running for 4.704)
+11-02-2022 15:56:49 - Starting SpringbootTaskApplication using Java 17.0.1 on DESKTOP-110P2IU with PID 11776 (C:\Users\akuma\OneDrive\Desktop\springboot-task\target\classes started by akuma in C:\Users\akuma\OneDrive\Desktop\springboot-task)
+11-02-2022 15:56:49 - No active profile set, falling back to default profiles: default
+11-02-2022 15:56:49 - Multiple Spring Data modules found, entering strict repository configuration mode!
+11-02-2022 15:56:49 - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+11-02-2022 15:56:50 - Finished Spring Data repository scanning in 56 ms. Found 1 MongoDB repository interfaces.
+11-02-2022 15:56:50 - Tomcat initialized with port(s): 8091 (http)
+11-02-2022 15:56:50 - Starting service [Tomcat]
+11-02-2022 15:56:50 - Starting Servlet engine: [Apache Tomcat/9.0.56]
+11-02-2022 15:56:50 - Initializing Spring embedded WebApplicationContext
+11-02-2022 15:56:50 - Root WebApplicationContext: initialization completed in 1155 ms
+11-02-2022 15:56:50 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+11-02-2022 15:56:50 - Opened connection [connectionId{localValue:1, serverValue:4}] to localhost:27017
+11-02-2022 15:56:50 - Opened connection [connectionId{localValue:2, serverValue:3}] to localhost:27017
+11-02-2022 15:56:50 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=27230200}
+11-02-2022 15:56:51 - ConsumerConfig values: 
 	allow.auto.create.topics = true
 	auto.commit.interval.ms = 5000
 	auto.offset.reset = latest
@@ -91,400 +107,30 @@
 	ssl.truststore.type = JKS
 	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
 
-20-01-2022 21:44:41 - Kafka version: 3.0.0
-20-01-2022 21:44:41 - Kafka commitId: 8cb0a5e9d3441962
-20-01-2022 21:44:41 - Kafka startTimeMs: 1642695281905
-20-01-2022 21:44:41 - [Consumer clientId=consumer-group1-1, groupId=group1] Subscribed to topic(s): Kafka_Task6
-20-01-2022 21:44:41 - Tomcat started on port(s): 8090 (http) with context path ''
-20-01-2022 21:44:41 - Started SpringbootTaskApplication in 5.137 seconds (JVM running for 5.586)
-20-01-2022 21:44:42 - [Consumer clientId=consumer-group1-1, groupId=group1] Connection to node -1 (/127.0.0.1:9092) could not be established. Broker may not be available.
-20-01-2022 21:44:42 - [Consumer clientId=consumer-group1-1, groupId=group1] Bootstrap broker 127.0.0.1:9092 (id: -1 rack: null) disconnected
-20-01-2022 21:44:42 - [Consumer clientId=consumer-group1-1, groupId=group1] Connection to node -1 (/127.0.0.1:9092) could not be established. Broker may not be available.
-20-01-2022 21:44:42 - [Consumer clientId=consumer-group1-1, groupId=group1] Bootstrap broker 127.0.0.1:9092 (id: -1 rack: null) disconnected
-20-01-2022 21:44:42 - [Consumer clientId=consumer-group1-1, groupId=group1] Connection to node -1 (/127.0.0.1:9092) could not be established. Broker may not be available.
-20-01-2022 21:44:42 - [Consumer clientId=consumer-group1-1, groupId=group1] Bootstrap broker 127.0.0.1:9092 (id: -1 rack: null) disconnected
-20-01-2022 21:44:42 - [Consumer clientId=consumer-group1-1, groupId=group1] Connection to node -1 (/127.0.0.1:9092) could not be established. Broker may not be available.
-20-01-2022 21:44:42 - [Consumer clientId=consumer-group1-1, groupId=group1] Bootstrap broker 127.0.0.1:9092 (id: -1 rack: null) disconnected
-20-01-2022 21:44:43 - [Consumer clientId=consumer-group1-1, groupId=group1] Connection to node -1 (/127.0.0.1:9092) could not be established. Broker may not be available.
-20-01-2022 21:44:43 - [Consumer clientId=consumer-group1-1, groupId=group1] Bootstrap broker 127.0.0.1:9092 (id: -1 rack: null) disconnected
-20-01-2022 21:44:43 - [Consumer clientId=consumer-group1-1, groupId=group1] Connection to node -1 (/127.0.0.1:9092) could not be established. Broker may not be available.
-20-01-2022 21:44:43 - [Consumer clientId=consumer-group1-1, groupId=group1] Bootstrap broker 127.0.0.1:9092 (id: -1 rack: null) disconnected
-20-01-2022 21:44:45 - [Consumer clientId=consumer-group1-1, groupId=group1] Connection to node -1 (/127.0.0.1:9092) could not be established. Broker may not be available.
-20-01-2022 21:44:45 - [Consumer clientId=consumer-group1-1, groupId=group1] Bootstrap broker 127.0.0.1:9092 (id: -1 rack: null) disconnected
-20-01-2022 21:44:46 - [Consumer clientId=consumer-group1-1, groupId=group1] Connection to node -1 (/127.0.0.1:9092) could not be established. Broker may not be available.
-20-01-2022 21:44:46 - [Consumer clientId=consumer-group1-1, groupId=group1] Bootstrap broker 127.0.0.1:9092 (id: -1 rack: null) disconnected
-20-01-2022 21:44:47 - [Consumer clientId=consumer-group1-1, groupId=group1] Connection to node -1 (/127.0.0.1:9092) could not be established. Broker may not be available.
-20-01-2022 21:44:47 - [Consumer clientId=consumer-group1-1, groupId=group1] Bootstrap broker 127.0.0.1:9092 (id: -1 rack: null) disconnected
-20-01-2022 21:44:47 - [Consumer clientId=consumer-group1-1, groupId=group1] Connection to node -1 (/127.0.0.1:9092) could not be established. Broker may not be available.
-20-01-2022 21:44:47 - [Consumer clientId=consumer-group1-1, groupId=group1] Bootstrap broker 127.0.0.1:9092 (id: -1 rack: null) disconnected
-20-01-2022 21:44:49 - [Consumer clientId=consumer-group1-1, groupId=group1] Connection to node -1 (/127.0.0.1:9092) could not be established. Broker may not be available.
-20-01-2022 21:44:49 - [Consumer clientId=consumer-group1-1, groupId=group1] Bootstrap broker 127.0.0.1:9092 (id: -1 rack: null) disconnected
-20-01-2022 21:44:50 - [Consumer clientId=consumer-group1-1, groupId=group1] Connection to node -1 (/127.0.0.1:9092) could not be established. Broker may not be available.
-20-01-2022 21:44:50 - [Consumer clientId=consumer-group1-1, groupId=group1] Bootstrap broker 127.0.0.1:9092 (id: -1 rack: null) disconnected
-20-01-2022 21:44:51 - [Consumer clientId=consumer-group1-1, groupId=group1] Connection to node -1 (/127.0.0.1:9092) could not be established. Broker may not be available.
-20-01-2022 21:44:51 - [Consumer clientId=consumer-group1-1, groupId=group1] Bootstrap broker 127.0.0.1:9092 (id: -1 rack: null) disconnected
-20-01-2022 21:44:52 - [Consumer clientId=consumer-group1-1, groupId=group1] Connection to node -1 (/127.0.0.1:9092) could not be established. Broker may not be available.
-20-01-2022 21:44:52 - [Consumer clientId=consumer-group1-1, groupId=group1] Bootstrap broker 127.0.0.1:9092 (id: -1 rack: null) disconnected
-20-01-2022 21:44:53 - [Consumer clientId=consumer-group1-1, groupId=group1] Connection to node -1 (/127.0.0.1:9092) could not be established. Broker may not be available.
-20-01-2022 21:44:53 - [Consumer clientId=consumer-group1-1, groupId=group1] Bootstrap broker 127.0.0.1:9092 (id: -1 rack: null) disconnected
-20-01-2022 21:44:54 - [Consumer clientId=consumer-group1-1, groupId=group1] Connection to node -1 (/127.0.0.1:9092) could not be established. Broker may not be available.
-20-01-2022 21:44:54 - [Consumer clientId=consumer-group1-1, groupId=group1] Bootstrap broker 127.0.0.1:9092 (id: -1 rack: null) disconnected
-20-01-2022 21:44:55 - [Consumer clientId=consumer-group1-1, groupId=group1] Connection to node -1 (/127.0.0.1:9092) could not be established. Broker may not be available.
-20-01-2022 21:44:55 - [Consumer clientId=consumer-group1-1, groupId=group1] Bootstrap broker 127.0.0.1:9092 (id: -1 rack: null) disconnected
-20-01-2022 21:44:56 - [Consumer clientId=consumer-group1-1, groupId=group1] Connection to node -1 (/127.0.0.1:9092) could not be established. Broker may not be available.
-20-01-2022 21:44:56 - [Consumer clientId=consumer-group1-1, groupId=group1] Bootstrap broker 127.0.0.1:9092 (id: -1 rack: null) disconnected
-20-01-2022 21:44:57 - [Consumer clientId=consumer-group1-1, groupId=group1] Connection to node -1 (/127.0.0.1:9092) could not be established. Broker may not be available.
-20-01-2022 21:44:57 - [Consumer clientId=consumer-group1-1, groupId=group1] Bootstrap broker 127.0.0.1:9092 (id: -1 rack: null) disconnected
-20-01-2022 21:45:23 - Starting SpringbootTaskApplication using Java 17.0.1 on DESKTOP-110P2IU with PID 23304 (C:\Users\akuma\OneDrive\Desktop\springboot-task\target\classes started by akuma in C:\Users\akuma\OneDrive\Desktop\springboot-task)
-20-01-2022 21:45:23 - No active profile set, falling back to default profiles: default
-20-01-2022 21:45:23 - Multiple Spring Data modules found, entering strict repository configuration mode!
-20-01-2022 21:45:23 - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-20-01-2022 21:45:24 - Finished Spring Data repository scanning in 54 ms. Found 1 MongoDB repository interfaces.
-20-01-2022 21:45:24 - Tomcat initialized with port(s): 8090 (http)
-20-01-2022 21:45:24 - Starting service [Tomcat]
-20-01-2022 21:45:24 - Starting Servlet engine: [Apache Tomcat/9.0.56]
-20-01-2022 21:45:24 - Initializing Spring embedded WebApplicationContext
-20-01-2022 21:45:24 - Root WebApplicationContext: initialization completed in 1446 ms
-20-01-2022 21:45:24 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
-20-01-2022 21:45:25 - Opened connection [connectionId{localValue:2, serverValue:3}] to localhost:27017
-20-01-2022 21:45:25 - Opened connection [connectionId{localValue:1, serverValue:4}] to localhost:27017
-20-01-2022 21:45:25 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=37523800}
-20-01-2022 21:45:26 - ConsumerConfig values: 
-	allow.auto.create.topics = true
-	auto.commit.interval.ms = 5000
-	auto.offset.reset = latest
-	bootstrap.servers = [127.0.0.1:9092]
-	check.crcs = true
-	client.dns.lookup = use_all_dns_ips
-	client.id = consumer-group1-1
-	client.rack = 
-	connections.max.idle.ms = 540000
-	default.api.timeout.ms = 60000
-	enable.auto.commit = false
-	exclude.internal.topics = true
-	fetch.max.bytes = 52428800
-	fetch.max.wait.ms = 500
-	fetch.min.bytes = 1
-	group.id = group1
-	group.instance.id = null
-	heartbeat.interval.ms = 3000
-	interceptor.classes = []
-	internal.leave.group.on.close = true
-	internal.throw.on.fetch.stable.offset.unsupported = false
-	isolation.level = read_uncommitted
-	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
-	max.partition.fetch.bytes = 1048576
-	max.poll.interval.ms = 300000
-	max.poll.records = 500
-	metadata.max.age.ms = 300000
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
-	receive.buffer.bytes = 65536
-	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retry.backoff.ms = 100
-	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.mechanism = GSSAPI
-	security.protocol = PLAINTEXT
-	security.providers = null
-	send.buffer.bytes = 131072
-	session.timeout.ms = 45000
-	socket.connection.setup.timeout.max.ms = 30000
-	socket.connection.setup.timeout.ms = 10000
-	ssl.cipher.suites = null
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-	ssl.endpoint.identification.algorithm = https
-	ssl.engine.factory.class = null
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.certificate.chain = null
-	ssl.keystore.key = null
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLSv1.3
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.certificates = null
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
-
-20-01-2022 21:45:26 - Kafka version: 3.0.0
-20-01-2022 21:45:26 - Kafka commitId: 8cb0a5e9d3441962
-20-01-2022 21:45:26 - Kafka startTimeMs: 1642695326563
-20-01-2022 21:45:26 - [Consumer clientId=consumer-group1-1, groupId=group1] Subscribed to topic(s): Kafka_Task6
-20-01-2022 21:45:26 - Tomcat started on port(s): 8090 (http) with context path ''
-20-01-2022 21:45:26 - Started SpringbootTaskApplication in 3.673 seconds (JVM running for 4.061)
-20-01-2022 21:45:27 - [Consumer clientId=consumer-group1-1, groupId=group1] Cluster ID: jQBGaerSSNu_R46HxyUMIw
-20-01-2022 21:45:27 - [Consumer clientId=consumer-group1-1, groupId=group1] Discovered group coordinator DESKTOP-110P2IU:9092 (id: 2147483647 rack: null)
-20-01-2022 21:45:27 - [Consumer clientId=consumer-group1-1, groupId=group1] (Re-)joining group
-20-01-2022 21:45:27 - [Consumer clientId=consumer-group1-1, groupId=group1] Request joining group due to: need to re-join with the given member-id
-20-01-2022 21:45:27 - [Consumer clientId=consumer-group1-1, groupId=group1] (Re-)joining group
-20-01-2022 21:45:27 - [Consumer clientId=consumer-group1-1, groupId=group1] Successfully joined group with generation Generation{generationId=140, memberId='consumer-group1-1-057ac38a-cff6-4f13-ad66-accbf7966e03', protocol='range'}
-20-01-2022 21:45:27 - [Consumer clientId=consumer-group1-1, groupId=group1] Finished assignment for group at generation 140: {consumer-group1-1-057ac38a-cff6-4f13-ad66-accbf7966e03=Assignment(partitions=[Kafka_Task6-0])}
-20-01-2022 21:45:27 - [Consumer clientId=consumer-group1-1, groupId=group1] Successfully synced group in generation Generation{generationId=140, memberId='consumer-group1-1-057ac38a-cff6-4f13-ad66-accbf7966e03', protocol='range'}
-20-01-2022 21:45:27 - [Consumer clientId=consumer-group1-1, groupId=group1] Notifying assignor about the new Assignment(partitions=[Kafka_Task6-0])
-20-01-2022 21:45:27 - [Consumer clientId=consumer-group1-1, groupId=group1] Adding newly assigned partitions: Kafka_Task6-0
-20-01-2022 21:45:27 - [Consumer clientId=consumer-group1-1, groupId=group1] Setting offset for partition Kafka_Task6-0 to the committed offset FetchPosition{offset=75, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-110P2IU:9092 (id: 0 rack: null)], epoch=0}}
-20-01-2022 21:45:27 - group1: partitions assigned: [Kafka_Task6-0]
-20-01-2022 21:45:28 - [Consumer clientId=consumer-group1-1, groupId=group1] Error sending fetch request (sessionId=INVALID, epoch=INITIAL) to node 0:
-org.apache.kafka.common.errors.DisconnectException: null
-20-01-2022 21:45:28 - [Consumer clientId=consumer-group1-1, groupId=group1] Group coordinator DESKTOP-110P2IU:9092 (id: 2147483647 rack: null) is unavailable or invalid due to cause: coordinator unavailable.isDisconnected: true. Rediscovery will be attempted.
-20-01-2022 21:45:30 - [Consumer clientId=consumer-group1-1, groupId=group1] Connection to node 0 (DESKTOP-110P2IU/192.168.29.95:9092) could not be established. Broker may not be available.
-20-01-2022 21:45:32 - [Consumer clientId=consumer-group1-1, groupId=group1] Connection to node 0 (DESKTOP-110P2IU/192.168.29.95:9092) could not be established. Broker may not be available.
-20-01-2022 21:45:32 - [Consumer clientId=consumer-group1-1, groupId=group1] Error sending fetch request (sessionId=INVALID, epoch=INITIAL) to node 0:
-org.apache.kafka.common.errors.DisconnectException: null
-20-01-2022 21:45:35 - [Consumer clientId=consumer-group1-1, groupId=group1] Connection to node 0 (DESKTOP-110P2IU/192.168.29.95:9092) could not be established. Broker may not be available.
-20-01-2022 21:45:37 - [Consumer clientId=consumer-group1-1, groupId=group1] Connection to node 0 (DESKTOP-110P2IU/192.168.29.95:9092) could not be established. Broker may not be available.
-20-01-2022 21:45:37 - [Consumer clientId=consumer-group1-1, groupId=group1] Error sending fetch request (sessionId=INVALID, epoch=INITIAL) to node 0:
-org.apache.kafka.common.errors.DisconnectException: null
-20-01-2022 21:45:40 - [Consumer clientId=consumer-group1-1, groupId=group1] Connection to node 0 (DESKTOP-110P2IU/192.168.29.95:9092) could not be established. Broker may not be available.
-20-01-2022 21:50:08 - Starting SpringbootTaskApplication using Java 17.0.1 on DESKTOP-110P2IU with PID 19284 (C:\Users\akuma\OneDrive\Desktop\springboot-task\target\classes started by akuma in C:\Users\akuma\OneDrive\Desktop\springboot-task)
-20-01-2022 21:50:08 - No active profile set, falling back to default profiles: default
-20-01-2022 21:50:08 - Multiple Spring Data modules found, entering strict repository configuration mode!
-20-01-2022 21:50:08 - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-20-01-2022 21:50:08 - Finished Spring Data repository scanning in 49 ms. Found 1 MongoDB repository interfaces.
-20-01-2022 21:50:09 - Tomcat initialized with port(s): 8090 (http)
-20-01-2022 21:50:09 - Starting service [Tomcat]
-20-01-2022 21:50:09 - Starting Servlet engine: [Apache Tomcat/9.0.56]
-20-01-2022 21:50:09 - Initializing Spring embedded WebApplicationContext
-20-01-2022 21:50:09 - Root WebApplicationContext: initialization completed in 1377 ms
-20-01-2022 21:50:09 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
-20-01-2022 21:50:09 - Opened connection [connectionId{localValue:2, serverValue:5}] to localhost:27017
-20-01-2022 21:50:09 - Opened connection [connectionId{localValue:1, serverValue:6}] to localhost:27017
-20-01-2022 21:50:09 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=42119400}
-20-01-2022 21:50:11 - ConsumerConfig values: 
-	allow.auto.create.topics = true
-	auto.commit.interval.ms = 5000
-	auto.offset.reset = latest
-	bootstrap.servers = [127.0.0.1:9092]
-	check.crcs = true
-	client.dns.lookup = use_all_dns_ips
-	client.id = consumer-group1-1
-	client.rack = 
-	connections.max.idle.ms = 540000
-	default.api.timeout.ms = 60000
-	enable.auto.commit = false
-	exclude.internal.topics = true
-	fetch.max.bytes = 52428800
-	fetch.max.wait.ms = 500
-	fetch.min.bytes = 1
-	group.id = group1
-	group.instance.id = null
-	heartbeat.interval.ms = 3000
-	interceptor.classes = []
-	internal.leave.group.on.close = true
-	internal.throw.on.fetch.stable.offset.unsupported = false
-	isolation.level = read_uncommitted
-	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
-	max.partition.fetch.bytes = 1048576
-	max.poll.interval.ms = 300000
-	max.poll.records = 500
-	metadata.max.age.ms = 300000
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
-	receive.buffer.bytes = 65536
-	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retry.backoff.ms = 100
-	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.mechanism = GSSAPI
-	security.protocol = PLAINTEXT
-	security.providers = null
-	send.buffer.bytes = 131072
-	session.timeout.ms = 45000
-	socket.connection.setup.timeout.max.ms = 30000
-	socket.connection.setup.timeout.ms = 10000
-	ssl.cipher.suites = null
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-	ssl.endpoint.identification.algorithm = https
-	ssl.engine.factory.class = null
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.certificate.chain = null
-	ssl.keystore.key = null
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLSv1.3
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.certificates = null
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
-
-20-01-2022 21:50:11 - Kafka version: 3.0.0
-20-01-2022 21:50:11 - Kafka commitId: 8cb0a5e9d3441962
-20-01-2022 21:50:11 - Kafka startTimeMs: 1642695611262
-20-01-2022 21:50:11 - [Consumer clientId=consumer-group1-1, groupId=group1] Subscribed to topic(s): Kafka_Task6
-20-01-2022 21:50:11 - Tomcat started on port(s): 8090 (http) with context path ''
-20-01-2022 21:50:11 - Started SpringbootTaskApplication in 3.626 seconds (JVM running for 4.018)
-20-01-2022 21:50:11 - [Consumer clientId=consumer-group1-1, groupId=group1] Cluster ID: jQBGaerSSNu_R46HxyUMIw
-20-01-2022 21:50:11 - [Consumer clientId=consumer-group1-1, groupId=group1] Discovered group coordinator DESKTOP-110P2IU:9092 (id: 2147483647 rack: null)
-20-01-2022 21:50:11 - [Consumer clientId=consumer-group1-1, groupId=group1] (Re-)joining group
-20-01-2022 21:50:11 - [Consumer clientId=consumer-group1-1, groupId=group1] Request joining group due to: need to re-join with the given member-id
-20-01-2022 21:50:11 - [Consumer clientId=consumer-group1-1, groupId=group1] (Re-)joining group
-20-01-2022 21:50:11 - [Consumer clientId=consumer-group1-1, groupId=group1] Successfully joined group with generation Generation{generationId=1, memberId='consumer-group1-1-e5918cd7-470c-450c-a87c-6868de151f49', protocol='range'}
-20-01-2022 21:50:11 - [Consumer clientId=consumer-group1-1, groupId=group1] Finished assignment for group at generation 1: {consumer-group1-1-e5918cd7-470c-450c-a87c-6868de151f49=Assignment(partitions=[Kafka_Task6-0])}
-20-01-2022 21:50:11 - [Consumer clientId=consumer-group1-1, groupId=group1] Successfully synced group in generation Generation{generationId=1, memberId='consumer-group1-1-e5918cd7-470c-450c-a87c-6868de151f49', protocol='range'}
-20-01-2022 21:50:11 - [Consumer clientId=consumer-group1-1, groupId=group1] Notifying assignor about the new Assignment(partitions=[Kafka_Task6-0])
-20-01-2022 21:50:11 - [Consumer clientId=consumer-group1-1, groupId=group1] Adding newly assigned partitions: Kafka_Task6-0
-20-01-2022 21:50:11 - [Consumer clientId=consumer-group1-1, groupId=group1] Found no committed offset for partition Kafka_Task6-0
-20-01-2022 21:50:11 - [Consumer clientId=consumer-group1-1, groupId=group1] Found no committed offset for partition Kafka_Task6-0
-20-01-2022 21:50:11 - [Consumer clientId=consumer-group1-1, groupId=group1] Resetting offset for partition Kafka_Task6-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-110P2IU:9092 (id: 0 rack: null)], epoch=0}}.
-20-01-2022 21:50:11 - group1: partitions assigned: [Kafka_Task6-0]
-20-01-2022 21:55:58 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-20-01-2022 21:55:58 - Initializing Servlet 'dispatcherServlet'
-20-01-2022 21:55:58 - Completed initialization in 2 ms
-20-01-2022 21:55:58 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
-20-01-2022 21:56:36 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.task.springboottask.dto.UserDto.getEmail()" because the return value of "com.task.three.springboottask.model.Message.getUserDto()" is null] with root cause
-java.lang.NullPointerException: Cannot invoke "com.task.springboottask.dto.UserDto.getEmail()" because the return value of "com.task.three.springboottask.model.Message.getUserDto()" is null
-	at com.task.three.springboottask.controller.UserController.IsMessageInvalid(UserController.java:109)
-	at com.task.three.springboottask.controller.UserController.saveUser(UserController.java:49)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-20-01-2022 21:56:46 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.task.springboottask.dto.UserDto.getEmail()" because the return value of "com.task.three.springboottask.model.Message.getUserDto()" is null] with root cause
-java.lang.NullPointerException: Cannot invoke "com.task.springboottask.dto.UserDto.getEmail()" because the return value of "com.task.three.springboottask.model.Message.getUserDto()" is null
-	at com.task.three.springboottask.controller.UserController.IsMessageInvalid(UserController.java:109)
-	at com.task.three.springboottask.controller.UserController.saveUser(UserController.java:49)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-20-01-2022 21:57:42 - Sending Paylod to Topic
-20-01-2022 21:57:42 - ProducerConfig values: 
+11-02-2022 15:56:51 - Kafka version: 3.0.0
+11-02-2022 15:56:51 - Kafka commitId: 8cb0a5e9d3441962
+11-02-2022 15:56:51 - Kafka startTimeMs: 1644575211942
+11-02-2022 15:56:51 - [Consumer clientId=consumer-group1-1, groupId=group1] Subscribed to topic(s): Kafka_Task8
+11-02-2022 15:56:51 - Tomcat started on port(s): 8091 (http) with context path ''
+11-02-2022 15:56:51 - Started SpringbootTaskApplication in 2.87 seconds (JVM running for 3.17)
+11-02-2022 15:56:52 - [Consumer clientId=consumer-group1-1, groupId=group1] Cluster ID: jQBGaerSSNu_R46HxyUMIw
+11-02-2022 15:56:52 - [Consumer clientId=consumer-group1-1, groupId=group1] Discovered group coordinator DESKTOP-110P2IU:9092 (id: 2147483647 rack: null)
+11-02-2022 15:56:52 - [Consumer clientId=consumer-group1-1, groupId=group1] (Re-)joining group
+11-02-2022 15:56:52 - [Consumer clientId=consumer-group1-1, groupId=group1] Request joining group due to: need to re-join with the given member-id
+11-02-2022 15:56:52 - [Consumer clientId=consumer-group1-1, groupId=group1] (Re-)joining group
+11-02-2022 15:56:52 - [Consumer clientId=consumer-group1-1, groupId=group1] Successfully joined group with generation Generation{generationId=82, memberId='consumer-group1-1-3338862c-a80d-46b3-b30d-e9ff6b0c8c25', protocol='range'}
+11-02-2022 15:56:52 - [Consumer clientId=consumer-group1-1, groupId=group1] Finished assignment for group at generation 82: {consumer-group1-1-3338862c-a80d-46b3-b30d-e9ff6b0c8c25=Assignment(partitions=[Kafka_Task8-0])}
+11-02-2022 15:56:52 - [Consumer clientId=consumer-group1-1, groupId=group1] Successfully synced group in generation Generation{generationId=82, memberId='consumer-group1-1-3338862c-a80d-46b3-b30d-e9ff6b0c8c25', protocol='range'}
+11-02-2022 15:56:52 - [Consumer clientId=consumer-group1-1, groupId=group1] Notifying assignor about the new Assignment(partitions=[Kafka_Task8-0])
+11-02-2022 15:56:52 - [Consumer clientId=consumer-group1-1, groupId=group1] Adding newly assigned partitions: Kafka_Task8-0
+11-02-2022 15:56:52 - [Consumer clientId=consumer-group1-1, groupId=group1] Setting offset for partition Kafka_Task8-0 to the committed offset FetchPosition{offset=25, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-110P2IU:9092 (id: 0 rack: null)], epoch=0}}
+11-02-2022 15:56:52 - group1: partitions assigned: [Kafka_Task8-0]
+11-02-2022 15:56:56 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11-02-2022 15:56:56 - Initializing Servlet 'dispatcherServlet'
+11-02-2022 15:56:56 - Completed initialization in 1 ms
+11-02-2022 15:56:56 - Opened connection [connectionId{localValue:3, serverValue:5}] to localhost:27017
+11-02-2022 15:57:54 - Sending ID to Topic
+11-02-2022 15:57:54 - ProducerConfig values: 
 	acks = -1
 	batch.size = 16384
 	bootstrap.servers = [127.0.0.1:9092]
@@ -556,36 +202,53 @@ java.lang.NullPointerException: Cannot invoke "com.task.springboottask.dto.UserD
 	transactional.id = null
 	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
 
-20-01-2022 21:57:42 - Kafka version: 3.0.0
-20-01-2022 21:57:42 - Kafka commitId: 8cb0a5e9d3441962
-20-01-2022 21:57:42 - Kafka startTimeMs: 1642696062079
-20-01-2022 21:57:42 - [Producer clientId=producer-1] Cluster ID: jQBGaerSSNu_R46HxyUMIw
-20-01-2022 21:57:42 - Payload received
-20-01-2022 21:57:42 - Opened connection [connectionId{localValue:3, serverValue:33}] to localhost:27017
-20-01-2022 21:57:42 - Updated User(id=7, userName=Don, email=Example123@gmail.com)
-20-01-2022 21:58:08 - Sending Paylod to Topic
-20-01-2022 21:58:08 - Payload received
-20-01-2022 21:58:08 - Created User(id=8, userName=Bon, email=Example123@gmail.com)
-20-01-2022 21:58:29 - Fetching User with ID 8
-20-01-2022 21:58:34 - Fetching all users
-20-01-2022 21:58:47 - Sending ID to Topic
-20-01-2022 21:58:47 - ID/Payload received
-20-01-2022 21:58:47 - Deleted User(id=8, userName=null, email=null)
-20-01-2022 21:59:23 - Starting SpringbootTaskApplication using Java 17.0.1 on DESKTOP-110P2IU with PID 15008 (C:\Users\akuma\OneDrive\Desktop\springboot-task\target\classes started by akuma in C:\Users\akuma\OneDrive\Desktop\springboot-task)
-20-01-2022 21:59:23 - No active profile set, falling back to default profiles: default
-20-01-2022 21:59:23 - Multiple Spring Data modules found, entering strict repository configuration mode!
-20-01-2022 21:59:23 - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-20-01-2022 21:59:23 - Finished Spring Data repository scanning in 53 ms. Found 1 MongoDB repository interfaces.
-20-01-2022 21:59:24 - Tomcat initialized with port(s): 8090 (http)
-20-01-2022 21:59:24 - Starting service [Tomcat]
-20-01-2022 21:59:24 - Starting Servlet engine: [Apache Tomcat/9.0.56]
-20-01-2022 21:59:24 - Initializing Spring embedded WebApplicationContext
-20-01-2022 21:59:24 - Root WebApplicationContext: initialization completed in 1327 ms
-20-01-2022 21:59:24 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
-20-01-2022 21:59:24 - Opened connection [connectionId{localValue:1, serverValue:34}] to localhost:27017
-20-01-2022 21:59:24 - Opened connection [connectionId{localValue:2, serverValue:35}] to localhost:27017
-20-01-2022 21:59:24 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=29880500}
-20-01-2022 21:59:26 - ConsumerConfig values: 
+11-02-2022 15:57:54 - Kafka version: 3.0.0
+11-02-2022 15:57:54 - Kafka commitId: 8cb0a5e9d3441962
+11-02-2022 15:57:54 - Kafka startTimeMs: 1644575274126
+11-02-2022 15:57:54 - [Producer clientId=producer-1] Cluster ID: jQBGaerSSNu_R46HxyUMIw
+11-02-2022 15:57:54 - ID/Payload received
+11-02-2022 15:57:54 - Deleted User With Id 12
+11-02-2022 15:58:00 - Sending ID to Topic
+11-02-2022 15:58:00 - ID/Payload received
+11-02-2022 15:58:00 - Deleted User With Id 13
+11-02-2022 15:58:19 - Sending ID to Topic
+11-02-2022 15:58:19 - ID/Payload received
+11-02-2022 15:58:19 - Deleted User With Id 17
+11-02-2022 15:58:32 - Sending Paylod to Topic
+11-02-2022 15:58:32 - Payload received
+11-02-2022 15:58:32 - Created User(id=10, userName=Ak, email=Example123@gmail.com)
+11-02-2022 15:58:36 - com.task.springboottask.excep.ResourceExistsException: Data with given ID already exists.
+11-02-2022 16:07:48 - Starting SpringbootTaskApplication using Java 17.0.1 on DESKTOP-110P2IU with PID 20864 (C:\Users\akuma\OneDrive\Desktop\springboot-task\target\classes started by akuma in C:\Users\akuma\OneDrive\Desktop\springboot-task)
+11-02-2022 16:07:48 - No active profile set, falling back to default profiles: default
+11-02-2022 16:07:48 - Multiple Spring Data modules found, entering strict repository configuration mode!
+11-02-2022 16:07:48 - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+11-02-2022 16:07:48 - Finished Spring Data repository scanning in 54 ms. Found 1 MongoDB repository interfaces.
+11-02-2022 16:07:49 - Tomcat initialized with port(s): 8090 (http)
+11-02-2022 16:07:49 - Starting service [Tomcat]
+11-02-2022 16:07:49 - Starting Servlet engine: [Apache Tomcat/9.0.56]
+11-02-2022 16:07:49 - Initializing Spring embedded WebApplicationContext
+11-02-2022 16:07:49 - Root WebApplicationContext: initialization completed in 1371 ms
+11-02-2022 16:07:49 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+11-02-2022 16:07:50 - Opened connection [connectionId{localValue:2, serverValue:6}] to localhost:27017
+11-02-2022 16:07:50 - Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+11-02-2022 16:07:50 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=35741800}
+11-02-2022 16:07:51 - Tomcat started on port(s): 8090 (http) with context path ''
+11-02-2022 16:07:51 - Started SpringbootTaskApplication in 3.217 seconds (JVM running for 3.54)
+11-02-2022 16:08:04 - Starting SpringbootTaskApplication using Java 17.0.1 on DESKTOP-110P2IU with PID 13532 (C:\Users\akuma\OneDrive\Desktop\springboot-task\target\classes started by akuma in C:\Users\akuma\OneDrive\Desktop\springboot-task)
+11-02-2022 16:08:04 - No active profile set, falling back to default profiles: default
+11-02-2022 16:08:05 - Multiple Spring Data modules found, entering strict repository configuration mode!
+11-02-2022 16:08:05 - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+11-02-2022 16:08:05 - Finished Spring Data repository scanning in 50 ms. Found 1 MongoDB repository interfaces.
+11-02-2022 16:08:05 - Tomcat initialized with port(s): 8091 (http)
+11-02-2022 16:08:05 - Starting service [Tomcat]
+11-02-2022 16:08:05 - Starting Servlet engine: [Apache Tomcat/9.0.56]
+11-02-2022 16:08:05 - Initializing Spring embedded WebApplicationContext
+11-02-2022 16:08:05 - Root WebApplicationContext: initialization completed in 1425 ms
+11-02-2022 16:08:06 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+11-02-2022 16:08:06 - Opened connection [connectionId{localValue:1, serverValue:9}] to localhost:27017
+11-02-2022 16:08:06 - Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+11-02-2022 16:08:06 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=32836600}
+11-02-2022 16:08:07 - ConsumerConfig values: 
 	allow.auto.create.topics = true
 	auto.commit.interval.ms = 5000
 	auto.offset.reset = latest
@@ -664,26 +327,480 @@ java.lang.NullPointerException: Cannot invoke "com.task.springboottask.dto.UserD
 	ssl.truststore.type = JKS
 	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
 
-20-01-2022 21:59:26 - Kafka version: 3.0.0
-20-01-2022 21:59:26 - Kafka commitId: 8cb0a5e9d3441962
-20-01-2022 21:59:26 - Kafka startTimeMs: 1642696166261
-20-01-2022 21:59:26 - [Consumer clientId=consumer-group1-1, groupId=group1] Subscribed to topic(s): Kafka_Task6
-20-01-2022 21:59:26 - Tomcat started on port(s): 8090 (http) with context path ''
-20-01-2022 21:59:26 - Started SpringbootTaskApplication in 3.5 seconds (JVM running for 3.928)
-20-01-2022 21:59:26 - [Consumer clientId=consumer-group1-1, groupId=group1] Cluster ID: jQBGaerSSNu_R46HxyUMIw
-20-01-2022 21:59:26 - [Consumer clientId=consumer-group1-1, groupId=group1] Discovered group coordinator DESKTOP-110P2IU:9092 (id: 2147483647 rack: null)
-20-01-2022 21:59:26 - [Consumer clientId=consumer-group1-1, groupId=group1] (Re-)joining group
-20-01-2022 21:59:26 - [Consumer clientId=consumer-group1-1, groupId=group1] Request joining group due to: need to re-join with the given member-id
-20-01-2022 21:59:26 - [Consumer clientId=consumer-group1-1, groupId=group1] (Re-)joining group
-20-01-2022 21:59:43 - [Consumer clientId=consumer-group1-1, groupId=group1] Successfully joined group with generation Generation{generationId=2, memberId='consumer-group1-1-deb476d1-e091-46c1-8d07-c4f0eb2f55a7', protocol='range'}
-20-01-2022 21:59:43 - [Consumer clientId=consumer-group1-1, groupId=group1] Finished assignment for group at generation 2: {consumer-group1-1-deb476d1-e091-46c1-8d07-c4f0eb2f55a7=Assignment(partitions=[Kafka_Task6-0])}
-20-01-2022 21:59:43 - [Consumer clientId=consumer-group1-1, groupId=group1] Successfully synced group in generation Generation{generationId=2, memberId='consumer-group1-1-deb476d1-e091-46c1-8d07-c4f0eb2f55a7', protocol='range'}
-20-01-2022 21:59:43 - [Consumer clientId=consumer-group1-1, groupId=group1] Notifying assignor about the new Assignment(partitions=[Kafka_Task6-0])
-20-01-2022 21:59:43 - [Consumer clientId=consumer-group1-1, groupId=group1] Adding newly assigned partitions: Kafka_Task6-0
-20-01-2022 21:59:43 - [Consumer clientId=consumer-group1-1, groupId=group1] Setting offset for partition Kafka_Task6-0 to the committed offset FetchPosition{offset=3, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-110P2IU:9092 (id: 0 rack: null)], epoch=0}}
-20-01-2022 21:59:43 - group1: partitions assigned: [Kafka_Task6-0]
-20-01-2022 21:59:58 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-20-01-2022 21:59:58 - Initializing Servlet 'dispatcherServlet'
-20-01-2022 21:59:58 - Completed initialization in 1 ms
-20-01-2022 21:59:58 - Fetching User with ID 1
-20-01-2022 21:59:58 - Opened connection [connectionId{localValue:3, serverValue:36}] to localhost:27017
+11-02-2022 16:08:07 - Kafka version: 3.0.0
+11-02-2022 16:08:07 - Kafka commitId: 8cb0a5e9d3441962
+11-02-2022 16:08:07 - Kafka startTimeMs: 1644575887827
+11-02-2022 16:08:07 - [Consumer clientId=consumer-group1-1, groupId=group1] Subscribed to topic(s): Kafka_Task8
+11-02-2022 16:08:07 - Tomcat started on port(s): 8091 (http) with context path ''
+11-02-2022 16:08:07 - Started SpringbootTaskApplication in 3.723 seconds (JVM running for 4.172)
+11-02-2022 16:08:08 - [Consumer clientId=consumer-group1-1, groupId=group1] Cluster ID: jQBGaerSSNu_R46HxyUMIw
+11-02-2022 16:08:08 - [Consumer clientId=consumer-group1-1, groupId=group1] Discovered group coordinator DESKTOP-110P2IU:9092 (id: 2147483647 rack: null)
+11-02-2022 16:08:08 - [Consumer clientId=consumer-group1-1, groupId=group1] (Re-)joining group
+11-02-2022 16:08:08 - [Consumer clientId=consumer-group1-1, groupId=group1] Request joining group due to: need to re-join with the given member-id
+11-02-2022 16:08:08 - [Consumer clientId=consumer-group1-1, groupId=group1] (Re-)joining group
+11-02-2022 16:08:08 - [Consumer clientId=consumer-group1-1, groupId=group1] Successfully joined group with generation Generation{generationId=84, memberId='consumer-group1-1-8be824f8-6c3e-4849-822a-04519232d996', protocol='range'}
+11-02-2022 16:08:08 - [Consumer clientId=consumer-group1-1, groupId=group1] Finished assignment for group at generation 84: {consumer-group1-1-8be824f8-6c3e-4849-822a-04519232d996=Assignment(partitions=[Kafka_Task8-0])}
+11-02-2022 16:08:08 - [Consumer clientId=consumer-group1-1, groupId=group1] Successfully synced group in generation Generation{generationId=84, memberId='consumer-group1-1-8be824f8-6c3e-4849-822a-04519232d996', protocol='range'}
+11-02-2022 16:08:08 - [Consumer clientId=consumer-group1-1, groupId=group1] Notifying assignor about the new Assignment(partitions=[Kafka_Task8-0])
+11-02-2022 16:08:08 - [Consumer clientId=consumer-group1-1, groupId=group1] Adding newly assigned partitions: Kafka_Task8-0
+11-02-2022 16:08:08 - [Consumer clientId=consumer-group1-1, groupId=group1] Setting offset for partition Kafka_Task8-0 to the committed offset FetchPosition{offset=29, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-110P2IU:9092 (id: 0 rack: null)], epoch=0}}
+11-02-2022 16:08:08 - group1: partitions assigned: [Kafka_Task8-0]
+11-02-2022 16:08:17 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11-02-2022 16:08:17 - Initializing Servlet 'dispatcherServlet'
+11-02-2022 16:08:17 - Completed initialization in 1 ms
+11-02-2022 16:08:17 - Fetching requested number of User(s)
+11-02-2022 16:08:17 - Opened connection [connectionId{localValue:3, serverValue:10}] to localhost:27017
+11-02-2022 16:08:25 - com.task.springboottask.excep.MissingDataException: Data with requested ID not found
+11-02-2022 16:09:40 - Starting SpringbootTaskApplication using Java 17.0.1 on DESKTOP-110P2IU with PID 15240 (C:\Users\akuma\OneDrive\Desktop\springboot-task\target\classes started by akuma in C:\Users\akuma\OneDrive\Desktop\springboot-task)
+11-02-2022 16:09:40 - No active profile set, falling back to default profiles: default
+11-02-2022 16:09:41 - Multiple Spring Data modules found, entering strict repository configuration mode!
+11-02-2022 16:09:41 - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+11-02-2022 16:09:41 - Finished Spring Data repository scanning in 50 ms. Found 1 MongoDB repository interfaces.
+11-02-2022 16:09:42 - Tomcat initialized with port(s): 8091 (http)
+11-02-2022 16:09:42 - Starting service [Tomcat]
+11-02-2022 16:09:42 - Starting Servlet engine: [Apache Tomcat/9.0.56]
+11-02-2022 16:09:42 - Initializing Spring embedded WebApplicationContext
+11-02-2022 16:09:42 - Root WebApplicationContext: initialization completed in 1285 ms
+11-02-2022 16:09:42 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+11-02-2022 16:09:42 - Opened connection [connectionId{localValue:1, serverValue:12}] to localhost:27017
+11-02-2022 16:09:42 - Opened connection [connectionId{localValue:2, serverValue:11}] to localhost:27017
+11-02-2022 16:09:42 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=37289000}
+11-02-2022 16:09:43 - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-group1-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group1
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+11-02-2022 16:09:43 - Kafka version: 3.0.0
+11-02-2022 16:09:43 - Kafka commitId: 8cb0a5e9d3441962
+11-02-2022 16:09:43 - Kafka startTimeMs: 1644575983914
+11-02-2022 16:09:43 - [Consumer clientId=consumer-group1-1, groupId=group1] Subscribed to topic(s): Kafka_Task8
+11-02-2022 16:09:43 - Tomcat started on port(s): 8091 (http) with context path ''
+11-02-2022 16:09:43 - Started SpringbootTaskApplication in 3.441 seconds (JVM running for 3.784)
+11-02-2022 16:09:44 - [Consumer clientId=consumer-group1-1, groupId=group1] Cluster ID: jQBGaerSSNu_R46HxyUMIw
+11-02-2022 16:09:44 - [Consumer clientId=consumer-group1-1, groupId=group1] Discovered group coordinator DESKTOP-110P2IU:9092 (id: 2147483647 rack: null)
+11-02-2022 16:09:44 - [Consumer clientId=consumer-group1-1, groupId=group1] (Re-)joining group
+11-02-2022 16:09:44 - [Consumer clientId=consumer-group1-1, groupId=group1] Request joining group due to: need to re-join with the given member-id
+11-02-2022 16:09:44 - [Consumer clientId=consumer-group1-1, groupId=group1] (Re-)joining group
+11-02-2022 16:09:47 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11-02-2022 16:09:47 - Initializing Servlet 'dispatcherServlet'
+11-02-2022 16:09:47 - Completed initialization in 1 ms
+11-02-2022 16:09:47 - Opened connection [connectionId{localValue:3, serverValue:13}] to localhost:27017
+11-02-2022 16:09:47 - com.task.springboottask.excep.MissingDataException: Data with requested ID not found
+11-02-2022 16:10:24 - Starting SpringbootTaskApplication using Java 17.0.1 on DESKTOP-110P2IU with PID 10216 (C:\Users\akuma\OneDrive\Desktop\springboot-task\target\classes started by akuma in C:\Users\akuma\OneDrive\Desktop\springboot-task)
+11-02-2022 16:10:24 - No active profile set, falling back to default profiles: default
+11-02-2022 16:10:24 - Multiple Spring Data modules found, entering strict repository configuration mode!
+11-02-2022 16:10:24 - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+11-02-2022 16:10:24 - Finished Spring Data repository scanning in 46 ms. Found 1 MongoDB repository interfaces.
+11-02-2022 16:10:25 - Tomcat initialized with port(s): 8091 (http)
+11-02-2022 16:10:25 - Starting service [Tomcat]
+11-02-2022 16:10:25 - Starting Servlet engine: [Apache Tomcat/9.0.56]
+11-02-2022 16:10:25 - Initializing Spring embedded WebApplicationContext
+11-02-2022 16:10:25 - Root WebApplicationContext: initialization completed in 1296 ms
+11-02-2022 16:10:25 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+11-02-2022 16:10:25 - Opened connection [connectionId{localValue:1, serverValue:14}] to localhost:27017
+11-02-2022 16:10:25 - Opened connection [connectionId{localValue:2, serverValue:15}] to localhost:27017
+11-02-2022 16:10:25 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=39591000}
+11-02-2022 16:10:26 - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-group1-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group1
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+11-02-2022 16:10:27 - Kafka version: 3.0.0
+11-02-2022 16:10:27 - Kafka commitId: 8cb0a5e9d3441962
+11-02-2022 16:10:27 - Kafka startTimeMs: 1644576027177
+11-02-2022 16:10:27 - [Consumer clientId=consumer-group1-1, groupId=group1] Subscribed to topic(s): Kafka_Task8
+11-02-2022 16:10:27 - Tomcat started on port(s): 8091 (http) with context path ''
+11-02-2022 16:10:27 - Started SpringbootTaskApplication in 3.404 seconds (JVM running for 3.724)
+11-02-2022 16:10:27 - [Consumer clientId=consumer-group1-1, groupId=group1] Cluster ID: jQBGaerSSNu_R46HxyUMIw
+11-02-2022 16:10:27 - [Consumer clientId=consumer-group1-1, groupId=group1] Discovered group coordinator DESKTOP-110P2IU:9092 (id: 2147483647 rack: null)
+11-02-2022 16:10:27 - [Consumer clientId=consumer-group1-1, groupId=group1] (Re-)joining group
+11-02-2022 16:10:27 - [Consumer clientId=consumer-group1-1, groupId=group1] Request joining group due to: need to re-join with the given member-id
+11-02-2022 16:10:27 - [Consumer clientId=consumer-group1-1, groupId=group1] (Re-)joining group
+11-02-2022 16:10:30 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11-02-2022 16:10:30 - Initializing Servlet 'dispatcherServlet'
+11-02-2022 16:10:30 - Completed initialization in 1 ms
+11-02-2022 16:10:30 - Opened connection [connectionId{localValue:3, serverValue:16}] to localhost:27017
+11-02-2022 16:10:30 - com.task.springboottask.excep.MissingDataException: Data with requested ID not found
+11-02-2022 16:10:35 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+11-02-2022 16:10:40 - com.task.springboottask.excep.ResourceExistsException: Data with given ID already exists.
+11-02-2022 16:11:02 - [Consumer clientId=consumer-group1-1, groupId=group1] Successfully joined group with generation Generation{generationId=86, memberId='consumer-group1-1-1c46f4ab-31b9-465d-a096-fbf23a8cc3c9', protocol='range'}
+11-02-2022 16:11:02 - [Consumer clientId=consumer-group1-1, groupId=group1] Finished assignment for group at generation 86: {consumer-group1-1-1c46f4ab-31b9-465d-a096-fbf23a8cc3c9=Assignment(partitions=[Kafka_Task8-0])}
+11-02-2022 16:11:02 - [Consumer clientId=consumer-group1-1, groupId=group1] Successfully synced group in generation Generation{generationId=86, memberId='consumer-group1-1-1c46f4ab-31b9-465d-a096-fbf23a8cc3c9', protocol='range'}
+11-02-2022 16:11:02 - [Consumer clientId=consumer-group1-1, groupId=group1] Notifying assignor about the new Assignment(partitions=[Kafka_Task8-0])
+11-02-2022 16:11:02 - [Consumer clientId=consumer-group1-1, groupId=group1] Adding newly assigned partitions: Kafka_Task8-0
+11-02-2022 16:11:02 - [Consumer clientId=consumer-group1-1, groupId=group1] Setting offset for partition Kafka_Task8-0 to the committed offset FetchPosition{offset=29, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-110P2IU:9092 (id: 0 rack: null)], epoch=0}}
+11-02-2022 16:11:02 - group1: partitions assigned: [Kafka_Task8-0]
+11-02-2022 16:11:47 - Fetching requested number of User(s)
+11-02-2022 16:11:50 - Fetching requested number of User(s)
+11-02-2022 16:11:50 - com.task.springboottask.excep.MissingDataException: Data not found in Database
+11-02-2022 16:15:50 - Starting SpringbootTaskApplication using Java 17.0.1 on DESKTOP-110P2IU with PID 6288 (C:\Users\akuma\OneDrive\Desktop\springboot-task\target\classes started by akuma in C:\Users\akuma\OneDrive\Desktop\springboot-task)
+11-02-2022 16:15:50 - No active profile set, falling back to default profiles: default
+11-02-2022 16:15:51 - Multiple Spring Data modules found, entering strict repository configuration mode!
+11-02-2022 16:15:51 - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+11-02-2022 16:15:51 - Finished Spring Data repository scanning in 47 ms. Found 1 MongoDB repository interfaces.
+11-02-2022 16:15:52 - Tomcat initialized with port(s): 8090 (http)
+11-02-2022 16:15:52 - Starting service [Tomcat]
+11-02-2022 16:15:52 - Starting Servlet engine: [Apache Tomcat/9.0.56]
+11-02-2022 16:15:52 - Initializing Spring embedded WebApplicationContext
+11-02-2022 16:15:52 - Root WebApplicationContext: initialization completed in 1339 ms
+11-02-2022 16:15:52 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+11-02-2022 16:15:52 - Opened connection [connectionId{localValue:2, serverValue:17}] to localhost:27017
+11-02-2022 16:15:52 - Opened connection [connectionId{localValue:1, serverValue:18}] to localhost:27017
+11-02-2022 16:15:52 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=54342500}
+11-02-2022 16:15:53 - Tomcat started on port(s): 8090 (http) with context path ''
+11-02-2022 16:15:53 - Started SpringbootTaskApplication in 3.183 seconds (JVM running for 3.497)
+11-02-2022 16:16:14 - Starting SpringbootTaskApplication using Java 17.0.1 on DESKTOP-110P2IU with PID 2956 (C:\Users\akuma\OneDrive\Desktop\springboot-task\target\classes started by akuma in C:\Users\akuma\OneDrive\Desktop\springboot-task)
+11-02-2022 16:16:14 - No active profile set, falling back to default profiles: default
+11-02-2022 16:16:15 - Multiple Spring Data modules found, entering strict repository configuration mode!
+11-02-2022 16:16:15 - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+11-02-2022 16:16:15 - Finished Spring Data repository scanning in 50 ms. Found 1 MongoDB repository interfaces.
+11-02-2022 16:16:16 - Tomcat initialized with port(s): 8091 (http)
+11-02-2022 16:16:16 - Starting service [Tomcat]
+11-02-2022 16:16:16 - Starting Servlet engine: [Apache Tomcat/9.0.56]
+11-02-2022 16:16:16 - Initializing Spring embedded WebApplicationContext
+11-02-2022 16:16:16 - Root WebApplicationContext: initialization completed in 1333 ms
+11-02-2022 16:16:16 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+11-02-2022 16:16:16 - Opened connection [connectionId{localValue:1, serverValue:20}] to localhost:27017
+11-02-2022 16:16:16 - Opened connection [connectionId{localValue:2, serverValue:19}] to localhost:27017
+11-02-2022 16:16:16 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=39273900}
+11-02-2022 16:16:17 - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-group1-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group1
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+11-02-2022 16:16:17 - Kafka version: 3.0.0
+11-02-2022 16:16:18 - Kafka commitId: 8cb0a5e9d3441962
+11-02-2022 16:16:18 - Kafka startTimeMs: 1644576377996
+11-02-2022 16:16:18 - [Consumer clientId=consumer-group1-1, groupId=group1] Subscribed to topic(s): Kafka_Task8
+11-02-2022 16:16:18 - Tomcat started on port(s): 8091 (http) with context path ''
+11-02-2022 16:16:18 - Started SpringbootTaskApplication in 3.608 seconds (JVM running for 3.962)
+11-02-2022 16:16:18 - [Consumer clientId=consumer-group1-1, groupId=group1] Cluster ID: jQBGaerSSNu_R46HxyUMIw
+11-02-2022 16:16:18 - [Consumer clientId=consumer-group1-1, groupId=group1] Discovered group coordinator DESKTOP-110P2IU:9092 (id: 2147483647 rack: null)
+11-02-2022 16:16:18 - [Consumer clientId=consumer-group1-1, groupId=group1] (Re-)joining group
+11-02-2022 16:16:18 - [Consumer clientId=consumer-group1-1, groupId=group1] Request joining group due to: need to re-join with the given member-id
+11-02-2022 16:16:18 - [Consumer clientId=consumer-group1-1, groupId=group1] (Re-)joining group
+11-02-2022 16:16:18 - [Consumer clientId=consumer-group1-1, groupId=group1] Successfully joined group with generation Generation{generationId=88, memberId='consumer-group1-1-9fe5e37a-0a72-48c5-b9a0-a19abf45d6dc', protocol='range'}
+11-02-2022 16:16:18 - [Consumer clientId=consumer-group1-1, groupId=group1] Finished assignment for group at generation 88: {consumer-group1-1-9fe5e37a-0a72-48c5-b9a0-a19abf45d6dc=Assignment(partitions=[Kafka_Task8-0])}
+11-02-2022 16:16:18 - [Consumer clientId=consumer-group1-1, groupId=group1] Successfully synced group in generation Generation{generationId=88, memberId='consumer-group1-1-9fe5e37a-0a72-48c5-b9a0-a19abf45d6dc', protocol='range'}
+11-02-2022 16:16:18 - [Consumer clientId=consumer-group1-1, groupId=group1] Notifying assignor about the new Assignment(partitions=[Kafka_Task8-0])
+11-02-2022 16:16:18 - [Consumer clientId=consumer-group1-1, groupId=group1] Adding newly assigned partitions: Kafka_Task8-0
+11-02-2022 16:16:18 - [Consumer clientId=consumer-group1-1, groupId=group1] Setting offset for partition Kafka_Task8-0 to the committed offset FetchPosition{offset=29, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-110P2IU:9092 (id: 0 rack: null)], epoch=0}}
+11-02-2022 16:16:18 - group1: partitions assigned: [Kafka_Task8-0]
+11-02-2022 16:16:24 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11-02-2022 16:16:24 - Initializing Servlet 'dispatcherServlet'
+11-02-2022 16:16:24 - Completed initialization in 1 ms
+11-02-2022 16:16:24 - Fetching requested number of User(s)
+11-02-2022 16:16:24 - Opened connection [connectionId{localValue:3, serverValue:21}] to localhost:27017
+11-02-2022 16:16:24 - com.task.springboottask.excep.MissingDataException: Data not found in Database
+11-02-2022 16:16:26 - Fetching requested number of User(s)
+11-02-2022 16:16:29 - Fetching requested number of User(s)
+11-02-2022 16:16:45 - Sending Paylod to Topic
+11-02-2022 16:16:45 - ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [127.0.0.1:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+11-02-2022 16:16:45 - Kafka version: 3.0.0
+11-02-2022 16:16:45 - Kafka commitId: 8cb0a5e9d3441962
+11-02-2022 16:16:45 - Kafka startTimeMs: 1644576405158
+11-02-2022 16:16:45 - [Producer clientId=producer-1] Cluster ID: jQBGaerSSNu_R46HxyUMIw
+11-02-2022 16:16:45 - Payload received
+11-02-2022 16:16:45 - Created User(id=11, userName=Al, email=Example123@gmail.com)
+11-02-2022 16:17:19 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' not supported]
+11-02-2022 16:17:33 - Sending Paylod to Topic
+11-02-2022 16:17:33 - Payload received
+11-02-2022 16:17:33 - Updated User(id=11, userName=Ab, email=Example123@gmail.com)
+11-02-2022 16:17:38 - Fetching requested number of User(s)
+11-02-2022 16:17:46 - Sending ID to Topic
+11-02-2022 16:17:46 - ID/Payload received
+11-02-2022 16:17:46 - Deleted User With Id 11
+11-02-2022 16:17:49 - Fetching requested number of User(s)

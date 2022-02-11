@@ -2,37 +2,18 @@ package com.task.three.springboottask.model;
 
 import com.task.springboottask.dto.UserDto;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-@Setter
-@Getter
-@ToString
+@Data
 public class Message {
 	
-	public String action;
-	public UserDto userDto;
-	
-	public Message(String action, UserDto user) {
-		super();
-		this.action = action;
-		this.userDto = user;
-	}
-
-	public Message() {
-		super();
-		
-	}
-	
-
-	
-	
-		
-	
-	
-	
-	
-	
-
+	private String action;
+	private UserDto data; 
+			
 }
