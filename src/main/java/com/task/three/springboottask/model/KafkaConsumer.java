@@ -1,5 +1,7 @@
 package com.task.three.springboottask.model;
 
+import org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.kafka.annotation.KafkaListener;
@@ -15,7 +17,7 @@ import lombok.extern.slf4j.Slf4j;
 @Service
 @ConditionalOnProperty(prefix ="consumer",name="enable",havingValue="true") 
 public class KafkaConsumer {
-
+	 
 	@Autowired
 	UserConsumerService service;
 
@@ -25,6 +27,7 @@ public class KafkaConsumer {
 		
 		
 		if (message.getAction().equals(Constants.CREATE)) { 
+			//TODO: More specific log messages
 			log.info("Payload received");
 			create(EntityDtoConverter.dtoToEntity(message.getData()));
 

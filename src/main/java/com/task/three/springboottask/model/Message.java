@@ -14,6 +14,5 @@ import lombok.ToString;
 public class Message {
 	
 	private String action;
-	private UserDto data; 
-			
+	private UserDto data;		
 }

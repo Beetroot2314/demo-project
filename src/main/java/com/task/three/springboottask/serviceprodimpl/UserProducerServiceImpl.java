@@ -1,5 +1,7 @@
 package com.task.three.springboottask.serviceprodimpl;
 
+import org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,15 +21,16 @@ import com.task.springboottask.converter.EntityDtoConverter;
 import com.task.springboottask.dto.UserDto;
 import com.task.springboottask.excep.MissingDataException;
 import com.task.springboottask.excep.ResourceExistsException;
+import com.task.springboottask.excep.ResourceNotFoundException;
 import com.task.three.springboottask.constants.Constants;
 import com.task.three.springboottask.controller.UserController;
 import com.task.three.springboottask.model.KafkaConsumer;
 import com.task.three.springboottask.model.Message;
 import com.task.three.springboottask.model.User;
 import com.task.three.springboottask.repository.UserRepo;
+import com.task.three.springboottask.serviceconsimpl.UserConsumerServiceImpl;
 import com.task.three.springboottask.serviceprod.UserProducerService;
 
-import ch.qos.logback.classic.Logger;
 import ch.qos.logback.core.pattern.Converter;
 import lombok.extern.java.Log;
 import lombok.extern.slf4j.Slf4j;
@@ -75,7 +78,10 @@ public class UserProducerServiceImpl implements UserProducerService {
 	public Page<UserDto> getUsersPage(int pageNumber, int pageSize, int id) {
 
 		log.info("Fetching requested number of User(s)");
-		if (id > 0) {
+		if (id != Integer.MIN_VALUE) {
+			if ((repository.existsById(id) == false) || (id>Integer.MIN_VALUE&&id<1))
+				throw new ResourceNotFoundException("Data with requested ID not found");
+			
 			List<UserDto> dto = new ArrayList<UserDto>();
 			dto.add(EntityDtoConverter.entityToDto(repository.findById(id).orElse(null)));
 			Page<UserDto> pageGetId = new PageImpl<>(dto);
@@ -92,7 +98,7 @@ public class UserProducerServiceImpl implements UserProducerService {
 			throw new MissingDataException("Invalid message. Missing fields in the message received.");
 		}
 		if (repository.existsById(id) == false) {
-			throw new MissingDataException("Data with requested ID not found");
+			throw new ResourceNotFoundException("Data with requested ID not found");
 		}
 		log.info("Sending ID to Topic");
 		Message message = new Message();
@@ -100,10 +106,11 @@ public class UserProducerServiceImpl implements UserProducerService {
 		userId.setId(id);
 		message.setData(userId);
 		message.setAction(Constants.DELETE);
-		kafkaTemplate.send(TOPIC, message);
+		//TODO: exception here
+		kafkaTemplate.send(TOPIC, message); 
 	}
-
-	public boolean isMessageInvalid(Message message) {
+		
+	public boolean isMessageInvalid(Message message) { //individual field check
 		if ((message.getData().getEmail() == "") || (message.getData().getId() <= 0)
 				|| (message.getData().getUserName() == "") || (message.getData() == null))
 			return true;

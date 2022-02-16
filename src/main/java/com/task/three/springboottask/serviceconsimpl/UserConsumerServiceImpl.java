@@ -1,5 +1,7 @@
 package com.task.three.springboottask.serviceconsimpl;
 
+import org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
 import java.util.List;
 import java.util.Optional;
 
@@ -14,7 +16,7 @@ import com.task.three.springboottask.model.User;
 import com.task.three.springboottask.repository.UserRepo;
 import com.task.three.springboottask.servicecons.UserConsumerService;
 
-import ch.qos.logback.classic.Logger;
+//import ch.qos.logback.classic.Logger;
 import lombok.NoArgsConstructor;
 import lombok.extern.java.Log;
 import lombok.extern.slf4j.Slf4j;
@@ -23,7 +25,6 @@ import lombok.extern.slf4j.Slf4j;
 @Service
 public class UserConsumerServiceImpl implements UserConsumerService {
 
-	User user = new User();
 
 	private UserRepo repository;
 

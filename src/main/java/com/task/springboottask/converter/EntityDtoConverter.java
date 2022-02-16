@@ -19,15 +19,10 @@ public class EntityDtoConverter {
 
 	public static User dtoToEntity(UserDto dto) {
 		return User.builder().id(dto.getId()).userName(dto.getUserName()).email(dto.getEmail()).build();
-
 	}
 
 	public static UserDto entityToDto(User user) {
-		if (user == null) {
-			throw new MissingDataException("Data not found in Database");
-		}
 		return UserDto.builder().id(user.getId()).userName(user.getUserName()).email(user.getEmail()).build();
-
 	}
 
 	public static List<UserDto> listToDto(List<User> user) {
@@ -41,3 +36,15 @@ public class EntityDtoConverter {
 	}
 
 }
+
+//User user = new User();
+//user.setEmail(dto.getEmail());
+//user.setId(dto.getId());
+//user.setUserName(dto.getUserName());
+//return user;
+
+//UserDto userDto = new UserDto();
+//userDto.setEmail(user.getEmail());
+//userDto.setId(user.getId());
+//userDto.setUserName(user.getUserName());
+//return userDto;
